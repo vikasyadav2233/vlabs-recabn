@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hardness of water using EDTA</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<script >
+	function hard() {
+		var a1 = parseFloat(document.getElementById('txt1').value);
+		var b1 = parseFloat(document.getElementById("txt2").value);
+		var c1 = parseFloat(document.getElementById("txt3").value);
+
+		var d = a1*b1*100*1000/c1;
+
+		document.getElementById("lbl").value=" The hardness is : "+ d + " mg/L.";
+
+	}
+</script>
+
+<body bgcolor="#b0bfc2">
+<nav>
+    <h1 style="font-size: 35px">
+        Rajkiya Engineering College Ambedkar Nagar
+    </h1>
+
+</nav>
+<div>
+    <h1>Determination of hardness of water sample using EDTA</h1>
+</div>
+<div>
+    <img src="edtaaapp.gif" style="height: 500px; width: auto" alt="">
+</div>
+<div>
+    <h3>formula used:</h3>
+    <img src="edtafor.png" style="height: 170px; width: auto" alt="">
+</div>
+<hr style="height: 3px">
+<form>
+<div>
+    Enter the value of V1(ml) :<input type="text" id="txt1" style="width: 175px;height: 25px; margin: 15px">
+
+</div>
+<div>
+    Enter the value of N :<input type="text" id="txt2" style="width: 175px;height: 25px; margin: 15px">
+
+</div>
+<div>
+    Enter the value of V(ml) :<input type="text" id="txt3" style="width: 175px;height: 25px; margin: 15px">
+
+</div>
+
+<div>
+    <input type="button" style="width: 175px;height: 25px; margin: 15px" value="Calculate Hardness" onclick="hard();">
+</div>
+<div>
+    <input id="lbl" style="width: 175px;height: 25px; margin: 15px">
+
+</div>
+</form>
+
+</body>
+
+</html>
